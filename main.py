@@ -4,16 +4,16 @@ import os
 from tkinter import *
 from tkinter import ttk
 fm = Tk()
-frm = ttk.Frame(fm, padding=10)
-frm.grid()
-ttk.Label(frm, text="Hello World!").grid(column=0, row=0)
+hph = ttk.Frame(fm, padding=10)
+hph.grid()
+ttk.Label(hph, text="Hello World!").grid(column=0, row=0)
 
 
 
-os.system('cls'if os.name == 'nt' else 'clear')
+# os.system('cls'if os.name == 'nt' else 'clear')
 
 
-dirs.dir_viewer()
+# dirs.dir_viewer()
 
 def filemanager(command):
     
@@ -49,8 +49,8 @@ def filemanager(command):
             else:
                 print('INCORRECT INPUT')
             
-        Radiobutton(pindah, text="File",command=pembagian("1")).grid(column=1,row=1)
-        Radiobutton(pindah, text="File",command=pembagian("2")).grid(column=1,row=1)
+        Radiobutton(h2h, text="File",command=pembagian("1")).grid(column=1,row=1)
+        Radiobutton(h2h, text="File",command=pembagian("2")).grid(column=1,row=1)
 
     ##########################  COPY ###################################
     elif command.lower() == '2' or command.lower() == 'copy':
@@ -108,16 +108,15 @@ def filemanager(command):
     print('#' * 100)
     print('#' * 100)
 
-
-ttk.Button(frm, text="Move", command=filemanager("1")).grid(column=1, row=0)
-# ttk.Button(frm, text="Copy", command=filemanager("2")).grid(column=0, row=1)
-# ttk.Button(frm, text="Rename", command=filemanager("3")).grid(column=0, row=2)
-# ttk.Button(frm, text="Create", command=filemanager("4")).grid(column=0, row=3)
-# ttk.Button(frm, text="Delete", command=filemanager("5")).grid(column=1, row=0)
-# ttk.Button(frm, text="Go To", command=filemanager("6")).grid(column=1, row=1)
-# ttk.Button(frm, text="View", command=filemanager("7")).grid(column=1, row=2)
-# ttk.Button(frm, text="Edit", command=filemanager("8")).grid(column=1, row=3)
-# ttk.Button(frm, text="Exit", command=filemanager("9")).grid(column=0, row=2)
+ttk.Button(hph, text="Move", command=filemanager("1")).grid(column=1, row=0)
+# ttk.Button(hph, text="Copy", command=filemanager("2")).grid(column=0, row=1)
+# ttk.Button(hph, text="Rename", command=filemanager("3")).grid(column=0, row=2)
+# ttk.Button(hph, text="Create", command=filemanager("4")).grid(column=0, row=3)
+# ttk.Button(hph, text="Delete", command=filemanager("5")).grid(column=1, row=0)
+# ttk.Button(hph, text="Go To", command=filemanager("6")).grid(column=1, row=1)
+# ttk.Button(hph, text="View", command=filemanager("7")).grid(column=1, row=2)
+# ttk.Button(hph, text="Edit", command=filemanager("8")).grid(column=1, row=3)
+# ttk.Button(hph, text="Exit", command=filemanager("9")).grid(column=0, row=2)
 ##########################  MOVE ###################################
     
 fm.mainloop()
