@@ -49,8 +49,8 @@ def filemanager(command):
             else:
                 print('INCORRECT INPUT')
             
-        file = Radiobutton(pindah, text="File",command=pembagian("1")).grid(column=1,row=1)
-        file = Radiobutton(pindah, text="File",command=pembagian("2")).grid(column=1,row=1)
+        Radiobutton(pindah, text="File",command=pembagian("1")).grid(column=1,row=1)
+        Radiobutton(pindah, text="File",command=pembagian("2")).grid(column=1,row=1)
 
     ##########################  COPY ###################################
     elif command.lower() == '2' or command.lower() == 'copy':
